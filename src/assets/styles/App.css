@@ -1,0 +1,51 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Home {
+    flex: 1;
+}
+p {
+    font-family: "Qanelas Medium";
+    font-weight: 500;
+}
+footer {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #19031F;
+    outline: 2px solid #ffffff80;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: auto;
+    user-select: none;
+}
+.select {
+    cursor: pointer;
+}
+.selected {
+    position: relative;
+}
+
+.selected::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
+    background: #CB10AC;
+    filter: blur(12px);
+    z-index: 0;
+}
+@media screen and (max-height: 740px) {
+    footer {
+        padding: 15px;
+    }
+}

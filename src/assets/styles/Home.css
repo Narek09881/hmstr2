@@ -1,0 +1,395 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 12px;
+    text-wrap: nowrap;
+    user-select: none;
+}
+
+.topStates {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.perDivs {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+.heroInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroInfo p {
+    padding: 10px;
+    padding-bottom: 6px;
+}
+.heroInfo p:nth-child(2) {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(91.7deg, #FF6E05 0%, #F83C27 99.37%);
+    background-clip: text;
+}
+.heroMain {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:
+            linear-gradient(#66496D, #66496D) padding-box,
+            linear-gradient(91.7deg, #C00204 0%, #F83C27 99.37%) border-box;
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+}
+.heroMain p {
+    font-family: "Qanelas SemiBold"
+}
+.heroMain::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    right: -3px;
+    bottom: 20%;
+    height: 40%;
+    background: #22001B;
+    z-index: 0;
+}
+.heroMain p {
+    padding: 10px;
+    align-self: flex-start;
+}
+
+.perDiv p:nth-child(1) {
+    padding: 10px;
+    padding-bottom: 6px;
+}
+
+.perMain {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff80;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #66496D;
+    font-size: 28px;
+
+}
+.perMain p {
+    font-family: "Qanelas ExtraBold"
+}
+.perMain img {
+    height: 22px;
+    width: 22px;
+}
+
+.balance {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    font-size: 48px;
+    background: #66496D;
+    border: 1px solid #ffffff80;
+    border-radius: 20px;
+}
+
+.balance * {
+    z-index: 1;
+    font-family: "Japanese 3017 Regular";
+}
+
+.balanceBG {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.fruitInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fruitInfo p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fruitMain {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #19031F;
+    border-radius: 15px;
+    border: 2px solid #CB10AC;
+}
+.fruitMain::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    right: -3px;
+    bottom: 20%;
+    height: 40%;
+    background: #22001B;
+    z-index: 0;
+}
+.fruitMain p {
+    align-self: flex-start;
+    padding:10px;
+}
+
+.fruitInfo:nth-child(1) {
+    padding-bottom: 6px;
+}
+
+.fruitInfo:nth-child(3) {
+    padding-top: 10px;
+}
+
+.boostMain {
+    position: relative;
+    height: 60px;
+    border: 2px solid #51FF14;
+    background: linear-gradient(123deg, #CD00FF 7.08%, #12000C 95.07%);
+    border-radius: 15px;
+    overflow: visible;
+    box-shadow: 0px 0px 4px 1px #95FFB3;
+}
+
+.boostMain * {
+    z-index: 1;
+}
+
+.boostMain::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 10%;
+    bottom: 0;
+    background-image: url("../img/purpleBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.boostMain img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.boostDiv p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.boostDiv p:nth-child(1) {
+    padding-bottom: 6px;
+}
+
+.boostDiv p:nth-child(3) {
+    padding-top: 10px;
+    color: #5EFF25;
+}
+
+.levelDiv {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    text-wrap: nowrap;
+}
+
+.Main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: max-content;
+    overflow: visible;
+}
+
+.Main img {
+    height: 300px;
+}
+#fruitBG {
+    position: absolute;
+    width: 40dvw;
+    height: auto;
+    z-index: -1;
+    filter: blur(5px);
+}
+.EnergyBar {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: grid;
+    gap: 10px;
+}
+.Track {
+    position: relative;
+    border-radius: 30px;
+    height: 30px;
+    width: 120px;
+    background: black;
+}
+.Track p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.Bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(92deg, #FF6E05 0%, #F83C27 99.37%);
+    z-index: 1;
+}
+.Bar p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.purpleText {
+    color: #CB10AC;
+}
+.click-container {
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    height: 130px;
+    width: 130px;
+    background-image: url("../img/clickEffect.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    pointer-events: none;
+}
+.click-container.hidden {
+    opacity: 0;
+}
+.click-container p {
+    font-family: "Japanese 3017 Regular";
+    font-size: 200%;
+}
+@media screen and (max-width: 900px) {
+    #fruitBG {
+        width: 90dvw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .click-container {
+        right: 8%;
+    }
+}
+@media screen and (max-width: 389px) {
+
+    .Main img {
+        height: 270px;
+    }
+    .balance {
+        padding: 15px;
+        font-size: 24px;
+    }
+    .heroMain {
+        height: 40px;
+    }
+    .heroMain img {
+        height: 100%;
+    }
+    .perMain {
+        height: 40px;
+        padding: 0;
+        font-size: 120%;
+    }
+    .perMain img {
+        height: 16px;
+        width: 16px;
+    }
+}
+@media screen and (max-height: 835px) {
+    .Main img {
+        height: 270px;
+    }
+}
+@media screen and (max-height: 815px) {
+    .Main img {
+        height: 250px;
+    }
+    .balance {
+        padding: 15px;
+        font-size: 24px;
+    }
+    .heroMain {
+        height: 40px;
+    }
+    .heroMain img {
+        height: 100%;
+    }
+    .perMain {
+        height: 40px;
+        padding: 0;
+        font-size: 120%;
+    }
+    .perMain img {
+        height: 16px;
+        width: 16px;
+    }
+}
+@media screen and (max-height: 720px) {
+    .fruitMain {
+        height: 40px;
+    }
+    .fruitMain img {
+        height: 100%;
+    }
+    .boostMain {
+        height: 40px;
+    }
+    .boostMain img {
+        height: 160%;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .Main img {
+        height: 200px;
+    }
+}

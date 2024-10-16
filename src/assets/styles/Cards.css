@@ -1,0 +1,203 @@
+.cards {
+    display: grid;
+    gap: 20px;
+}
+.topStatesCard {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    font-size: 12px;
+}
+.balanceDiv p:nth-child(1) {
+    padding: 10px;
+    padding-bottom: 6px;
+}
+.balanceSmall {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 28px;
+    background: #66496D;
+    outline: 2px solid #ffffff80;
+    border-radius: 20px;
+    padding: 12px;
+    padding-left: 10%;
+}
+.balanceSmall p {
+    font-family: "Qanelas ExtraBold";
+}
+.balanceSmall * {
+    z-index: 1;
+}
+.balanceSmall .coin {
+    height: 22px;
+}
+.balanceBGSmall {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.buttons {
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+}
+.buttons button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #19031F;
+    color: white;
+    font-family: "Qanelas Medium";
+    flex: 1;
+}
+.buttons .selectBut {
+    background: white;
+    color: black;
+}
+.CardsDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    position: relative;
+    height: calc(100vh - 315px);
+    overflow: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    height: 160px;
+    overflow: hidden;
+}
+.card p:nth-child(1) {
+    background: linear-gradient(91.7deg, #FF6E05 0%, #F83C27 99.37%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card img {
+    height: 15px;
+}
+.cardTitle {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.imgs {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    max-width: 70px;
+}
+.imgs img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.imgs img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px -2px 7px rgba(255, 20, 147, 0.64));
+}
+.cardPrice {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
+}
+.cardPrice p {
+    color: #FFE605;
+    font-size: 150%;
+}
+.toAddCard {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.toAddCard p {
+    color: #CB10AC;
+}
+.Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    flex: 1;
+    padding: 15px;
+}
+.centerInfo {
+    text-align: left;
+}
+
+@media screen and (max-width: 389px) {
+    .balanceSmall {
+        height: 40px;
+        padding: 0;
+        font-size: 15px;
+        border-radius: 15px;
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width: 370px) {
+    .buttons button {
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: none;
+        background: #19031F;
+        color: white;
+    }
+}
+@media screen and (max-height: 815px) {
+    .balanceSmall {
+        height: 40px;
+        padding: 0;
+        font-size: 15px;
+        border-radius: 15px;
+        padding-left: 10%;
+    }
+    .buttons button {
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: none;
+        background: #19031F;
+        color: white;
+    }
+    .CardsDiv {
+        height: calc(100vh - 300px);
+    }
+    .card {
+        height: 125px;
+    }
+}
+@media screen and (max-height: 735px) {
+    .CardsDiv {
+        height: calc(100vh - 230px);
+    }
+}
